@@ -1,0 +1,379 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+body::-webkit-scrollbar {
+  display: none; }
+
+@font-face {
+  font-family: DS-Digital;
+  src: url("DS-DIGIB.TTF"); }
+
+.welcome {
+  text-align: center;
+  padding: 20px; }
+  .welcome img {
+    height: 50px;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; }
+    .welcome img:hover {
+      cursor: pointer;
+      height: 55px; }
+  .welcome img,
+  .welcome h1,
+  .welcome i {
+    margin: 0;
+    padding: 0; }
+
+.menu {
+  text-align: right;
+  background-color: black; }
+  .menu font {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    line-height: 30px;
+    left: 10px;
+    top: 0px; }
+    .menu font img {
+      height: 28px;
+      margin-right: 5px;
+      border: 2px solid green;
+      border-radius: 50%; }
+    .menu font a {
+      text-decoration: none;
+      color: green; }
+  .menu span,
+  .menu button {
+    border: none;
+    outline: none;
+    color: green;
+    font-weight: bold;
+    cursor: pointer; }
+    .menu span:hover,
+    .menu button:hover {
+      color: greenyellow;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+  .menu button {
+    padding: 8px;
+    -webkit-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    transform: translateY(2px);
+    background-color: rgba(0, 0, 0, 0); }
+
+.divbtn {
+  overflow: hidden;
+  border: 1px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  z-index: 1; }
+  .divbtn select {
+    max-width: 100px; }
+  .divbtn .btn {
+    width: 95%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    font-size: 1.5em;
+    padding: 5px;
+    height: 40px;
+    line-height: 40px; }
+    .divbtn .btn:hover {
+      background-color: limegreen; }
+
+.active {
+  background: green;
+  color: white; }
+
+@media screen and (max-width: 500px) {
+  #formReserve {
+    max-width: 80%; }
+  #divReservations #divcontainer {
+    display: -ms-grid;
+    display: grid; }
+    #divReservations #divcontainer #divfiltrar {
+      background: #ddd;
+      height: auto;
+      max-width: 100%;
+      margin-right: 0; }
+      #divReservations #divcontainer #divfiltrar .filtroPc {
+        margin: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+    #divReservations #divcontainer #divcitas {
+      width: 100%; } }
+
+.flechasUp,
+.flechasDown {
+  display: block;
+  max-width: 1200px;
+  text-decoration: none;
+  font-size: 2em;
+  color: dodgerblue;
+  text-align: center;
+  z-index: 0;
+  -webkit-animation: arrowUp 2s infinite;
+  animation: arrowUp 2s infinite; }
+
+@-webkit-keyframes arrowUp {
+  0% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+    opacity: 0.5; }
+  20% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 0.8; }
+  40% {
+    -webkit-transform: translateY(7px);
+    transform: translateY(7px);
+    opacity: 0.3; }
+  90% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+    opacity: 1; } }
+
+@keyframes arrowUp {
+  0% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+    opacity: 0.5; }
+  20% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 0.8; }
+  40% {
+    -webkit-transform: translateY(7px);
+    transform: translateY(7px);
+    opacity: 0.3; }
+  90% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+    opacity: 1; } }
+
+.flechasDown {
+  -webkit-animation: arrowDown 2s infinite;
+  animation: arrowDown 2s infinite; }
+
+@-webkit-keyframes arrowDown {
+  0% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    opacity: 0.5; }
+  20% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 0.8; }
+  40% {
+    -webkit-transform: translateY(-7px);
+    transform: translateY(-7px);
+    opacity: 0.3; }
+  90% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    opacity: 1; } }
+
+@keyframes arrowDown {
+  0% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    opacity: 0.5; }
+  20% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 0.8; }
+  40% {
+    -webkit-transform: translateY(-7px);
+    transform: translateY(-7px);
+    opacity: 0.3; }
+  90% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    opacity: 1; } }
+
+.divtab {
+  display: none;
+  border-top: none; }
+  .divtab table {
+    width: 96%;
+    margin: auto;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    max-width: 1200px; }
+    .divtab table thead {
+      background: green;
+      color: white; }
+    .divtab table th {
+      background: green;
+      z-index: 1;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 40px;
+      /* Don't forget this, required for the stickiness */
+      -webkit-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4); }
+    .divtab table .th {
+      position: -webkit-sticky;
+      position: sticky;
+      background-color: #d6ebd6;
+      top: 60px; }
+    .divtab table tbody tr td span {
+      display: block;
+      color: green;
+      cursor: pointer;
+      text-align: center; }
+    .divtab table th,
+    .divtab table td {
+      text-align: left;
+      padding: 2px; }
+    .divtab table tbody tr:nth-child(even) {
+      background-color: #eee; }
+    .divtab table tfoot {
+      background: #e6f2e6; }
+    .divtab table tfoot tr th {
+      background: #8cc68c; }
+  .divtab h1, .divtab h2 {
+    margin: auto;
+    text-align: center; }
+  .divtab form {
+    margin: auto;
+    width: 320px;
+    padding: 5px;
+    max-width: 100%; }
+    .divtab form fieldset {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      gap: 5px; }
+      .divtab form fieldset legend {
+        border: thin solid #aaa;
+        padding: 0 3px;
+        color: green; }
+        .divtab form fieldset legend span {
+          padding: 0 15px; }
+      .divtab form fieldset input[type=date] {
+        padding: 2px 5px;
+        height: 17px; }
+    .divtab form label a {
+      text-decoration: none;
+      border-radius: 50%;
+      border: 2px solid green;
+      padding: 0 5px;
+      font-weight: bold;
+      color: green; }
+    .divtab form input,
+    .divtab form textarea,
+    .divtab form select,
+    .divtab form fieldset,
+    .divtab form button {
+      width: 100%;
+      margin: 5px auto;
+      padding: 5px; }
+    .divtab form input[type=checkbox] {
+      width: auto; }
+    .divtab form #fieldSetSearch span {
+      font-size: 1.9em;
+      color: #065acf; }
+    .divtab form #fieldSetSearch select {
+      padding: 2px 5px;
+      height: 25px; }
+    .divtab form #fieldSetSearch input[type=checkbox] {
+      width: 25px;
+      height: 25px; }
+    .divtab form select {
+      width: 105%; }
+    .divtab form fieldset {
+      border: 1px solid gray; }
+      .divtab form fieldset legend {
+        text-align: center; }
+      .divtab form fieldset label input {
+        width: auto;
+        margin: auto 5px; }
+    .divtab form button {
+      padding: 10px;
+      background-color: green;
+      color: white;
+      width: 105%;
+      cursor: pointer;
+      outline: none;
+      border: thin solid gray;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+      .divtab form button:hover {
+        background: limegreen;
+        color: black; }
+    .divtab form p {
+      text-align: center; }
+      .divtab form p span {
+        color: blue;
+        cursor: pointer; }
+    .divtab form p#infoerror {
+      padding: 0;
+      margin: 0;
+      font-size: 12px; }
+
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px 5%;
+  bottom: 0;
+  width: 90%; }
+  footer .redes img {
+    height: 30px;
+    margin: 0 5px; }
+  footer .redes a {
+    text-decoration: none; }
+  footer p,
+  footer i {
+    padding: 0;
+    margin: 0; }
+  footer p a,
+  footer #subir a {
+    text-decoration: none;
+    color: dodgerblue; }
+
+@media screen and (min-width: 1000px) {
+  .body {
+    font-size: 2em; }
+  .foot {
+    font-size: 1.3em; } }
+
+@media screen and (max-width: 350px) {
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0 1%; } }
