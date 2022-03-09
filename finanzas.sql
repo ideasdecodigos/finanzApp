@@ -3,11 +3,10 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 08, 2022 at 04:28 AM
+-- Generation Time: Mar 09, 2022 at 02:45 AM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
-SET FOREIGN_KEY_CHECKS=0;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
@@ -93,25 +92,6 @@ ALTER TABLE `registros`
 --
 ALTER TABLE `usuarios`
   ADD CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`idusuario`) REFERENCES `main_users`.`table_users` (`u_code`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
-
---
--- Metadata
---
-USE `phpmyadmin`;
-
---
--- Metadata for table registros
---
-
---
--- Metadata for table usuarios
---
-
---
--- Metadata for database finanzas
---
-SET FOREIGN_KEY_CHECKS=1;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
